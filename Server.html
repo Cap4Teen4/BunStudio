@@ -19,12 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- LOCAL CSS (THIS IS THE IMPORTANT FIX) -->
-    <link rel="stylesheet" href="assets/css/bosch-island.css">
+         <link rel="stylesheet" href="assets/css/bosch-island.css">
     <link rel="stylesheet" href="assets/css/setup-guide.css">
+    <link rel="stylesheet" href="assets/css/override.css">
+
 
     <!-- Preloads (LOCAL) -->
-    <link rel="preload" href="assets/img/slider-1.jpg" as="image">
-    <link rel="preload" href="assets/img/slider-2.jpg" as="image">
+    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-1.jpg?raw=true" as="image">
+    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-2.jpg?raw=true" as="image">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,20 +40,17 @@
     
     <!-- Preload critical resources -->
     <link rel="preload" href="assets/css/bosch-island.css" as="style">
-    <link rel="preload" href="assets/img/slider-1.jpg" as="image" type="image/jpg">
-    <link rel="preload" href="assets/img/slider-2.jpg" as="image" type="image/jpg">
-    <link rel="preload" href="assets/img/slider-3.jpg" as="image" type="image/jpg">
-    <link rel="preload" href="assets/img/slider-4.jpg" as="image" type="image/jpg">
+    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-1.jpg?raw=true" as="image" type="image/jpeg">
+    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-2.jpg?raw=true" as="image" type="image/jpeg">
+    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-3.jpg?raw=true" as="image" type="image/jpeg">
+    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-4.jpg?raw=true" as="image" type="image/jpeg">
     
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/override.css">
     <link rel="stylesheet" href="https://bosch-island.com/assets/css/bosch-island.css?v=1774947917">
-    <link rel="stylesheet" href="assets/css/setup-guide.css">
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-GPFR6ERCHH');
-    </script><style type="text/css" id="operaUserStyle"></style>
+    
+
+    
 <style>
     @keyframes ripple {
         to {
@@ -59,7 +58,6 @@
             opacity: 0;
         }
     }
-</style><style type="text/css">
 
 </style></head>
 <body>
@@ -106,10 +104,68 @@
     </div>
 
     <!-- Hero Section -->
+    <section class="hero2" id="home" role="banner">
+        <div class="hero2-slider">
+            <div class="hero2-slide active"></div>
+            <div class="hero2-slide"></div>
+            <div class="hero2-slide"></div>
+            <div class="hero2-slide active"></div>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="hero2-content">
+            <!--<div class="hero-badge">🧑‍💻 | Fan Made Studio Projects</div>-->
+            <!--<div class="hero-badge">🍪 | STUDIO STATUS ✅ - BETA TESTING </div>-->
+
+            <h1 class="hero2-title">
+                <span class="typing-text" data-text="Midnight Bun Studios"> </span>
+            </h1>
+            <div class="hero2-subtitles">🧑‍💻 | Fan Made Studio Projects</div>
+            <div class="hero2-subtitles">🍪 | STUDIO STATUS ✅ - BETA TESTING </div>
+            <!--<h2 class="hero2-subtitle">Current Focus | Building the Team</h2>-->
+            <!--<h2 class="hero2-subtitle">Current Projects | The Isle OCR Tracker</h2>-->
+            <h2 class="hero2-subtitles">Current Focus | Building the Team</h2>
+            <h2 class="hero2-subtitles">Current Projects | The Isle OCR Tracker</h2>
+            <p class="hero2-description">
+            FIND YOUR FRIENDS IN-GAME<br />
+            HOW IT WORKS:<br />
+            Step 1. <br />
+            Enter your in-game name and click Create.<br />
+            Step 2. <br />
+            Share the 6-letter room code with friends.<br />
+            Step 3. <br />
+            Click Share Screen and select your game window.<br />
+            Step 4. <br />
+            Press Tab — waypoints automatically appear.<br />
+            <br />
+            <big>If you Need assistance Ask Staff Members</big>
+            
+            </p>
+            <div class="hero2-buttons">
+                <a href="#how-it-works" class="btn btn-dark cta-btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord server to get started">
+                    <i class="fab fa-discord" aria-hidden="true"></i>
+                        <span>Get Started</span>
+                    <div class="btn-shine" aria-hidden="true"></div>
+                </a>
+                    <a href="#team" class="btn btn-secondary btn-secondary" aria-label="Learn more about how to get started">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                        <span>Meet The Team</span>
+                        <div class="btn-shine" aria-hidden="true"></div>
+                    </a>
+
+                <!-- <a href="#how-it-works" class="btn btn-primary">Get Started</a> -->
+                <!-- <a href="file:///C:/Users/Brandon/Desktop/Bosch%20Pack%20Tracker%20Map%20V2/index.html" class="btn btn-primary">Open Map</a> -->
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section 
     <section class="hero" id="home" role="banner">
         <div class="hero-slider">
-            <div class="hero-slide"></div>
             <div class="hero-slide active"></div>
+            <div class="hero-slide"></div>
             <div class="hero-slide"></div>
             <div class="hero-slide"></div>
         </div>
@@ -119,16 +175,12 @@
             <div class="floating-element"></div>
         </div>
         <div class="hero-content">
-            <!--<div class="hero-badge">🧑‍💻 | Fan Made Studio Projects</div>-->
-            <!--<div class="hero-badge">🍪 | STUDIO STATUS ✅ - BETA TESTING </div>-->
 
             <h1 class="hero-title">
                 <span class="typing-text" data-text="Midnight Bun Studios"> </span>
             </h1>
             <div class="hero-subtitles">🧑‍💻 | Fan Made Studio Projects</div>
             <div class="hero-subtitles">🍪 | STUDIO STATUS ✅ - BETA TESTING </div>
-            <!--<h2 class="hero-subtitle">Current Focus | Building the Team</h2>-->
-            <!--<h2 class="hero-subtitle">Current Projects | The Isle OCR Tracker</h2>-->
             <h2 class="hero-subtitles">Current Focus | Building the Team</h2>
             <h2 class="hero-subtitles">Current Projects | The Isle OCR Tracker</h2>
             <p class="hero-description">
@@ -157,13 +209,10 @@
                         <span>Meet The Team</span>
                         <div class="btn-shine" aria-hidden="true"></div>
                     </a>
-
-                <!-- <a href="#how-it-works" class="btn btn-primary">Get Started</a> -->
-                <!-- <a href="file:///C:/Users/Brandon/Desktop/Bosch%20Pack%20Tracker%20Map%20V2/index.html" class="btn btn-primary">Open Map</a> -->
             </div>
         </div>
     </section>
-
+-->
  
 <!-- =====================================================
      THE ISLE OCR TRACKER (WIDE FEATURE STYLE)
@@ -297,7 +346,7 @@
 
             <div class="feature-card__left">
                 <div class="feature-icon">
-                    <img src="assets\img\BunDevProjects logo with cute rabbit.png" alt="Work in Progress">
+                    <img src="assets/img/BunDevProjects logo with cute rabbit.png" alt="Work in Progress">
                 </div>
             </div>
 
@@ -334,7 +383,7 @@
 
             <div class="feature-card__left">
                 <div class="feature-icon">
-                    <img src="assets\img\blue-gate-confiscation-room-key.png" alt="Contributors">
+                    <img src="assets/img/blue-gate-confiscation-room-key.png" alt="Contributors">
                 </div>
             </div>
 
@@ -432,16 +481,22 @@
             <div class="particle"></div>
             <div class="particle"></div>
         </div>
+                <div class="hero2-slider">
+            <div class="hero2-slide active"></div>
+            <div class="hero2-slide"></div>
+            <div class="hero2-slide"></div>
+            <div class="hero2-slide active"></div>
+        </div>
         <div class="cta-container">
             <div class="cta-content bounce-in">
                 <h2 class="cta-title">
-                    <span class="title-word">Ready</span>
-                    <span class="title-word">to</span>
-                    <span class="title-word">Join</span>
-                    <span class="title-word">the</span>
-                    <span class="title-word">Build Process?</span>
+                    <span class="title-word2">Ready</span>
+                    <span class="title-word2">to</span>
+                    <span class="title-word2">Join</span>
+                    <span class="title-word2">the</span>
+                    <span class="title-word2">Build Process?</span>
                 </h2>
-                <p class="cta-description slide-left">
+                <p class="cta3-description slide-left">
                     Site is in early stages of development, but feel free to join the discord and check out the map!
                 </p>
                 <div class="cta-buttons scale-up">
@@ -450,7 +505,7 @@
                         <span>Join Discord</span>
                         <div class="btn-shine" aria-hidden="true"></div>
                     </a>
-                    <a href="#team" class="btn btn-secondary cta-btn-secondary" aria-label="Learn more about how to get started">
+                    <a href="#team" class="btn btn-secondary btn-secondary" aria-label="Learn more about how to get started">
                         <i class="fas fa-info-circle" aria-hidden="true"></i>
                         <span>Meet The Team</span>
                         <div class="btn-shine" aria-hidden="true"></div>
