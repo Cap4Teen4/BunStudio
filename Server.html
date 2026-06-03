@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<html lang="en">
 <html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,36 +15,10 @@
     <meta property="og:title" content="Midnight Bun 3D Printer Studio">
     <meta property="og:image" content="assets/img/landscape.png">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700;900&family=Exo+2:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <!-- LOCAL CSS (THIS IS THE IMPORTANT FIX) -->
-         <link rel="stylesheet" href="assets/css/bosch-island.css">
     <link rel="stylesheet" href="assets/css/setup-guide.css">
-    <link rel="stylesheet" href="assets/css/override.css">
 
-
-    <!-- Preloads (LOCAL) -->
-    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-1.jpg?raw=true" as="image">
-    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-2.jpg?raw=true" as="image">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400;700;900&amp;family=Exo+2:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
-    
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="assets/css/bosch-island.css" as="style">
-    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-1.jpg?raw=true" as="image" type="image/jpeg">
-    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-2.jpg?raw=true" as="image" type="image/jpeg">
-    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-3.jpg?raw=true" as="image" type="image/jpeg">
-    <link rel="preload" href="https://github.com/Cap4Teen4/BunStudio/blob/main/assets/img/slider-4.jpg?raw=true" as="image" type="image/jpeg">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/override.css">
 
 
 <style>
@@ -54,112 +30,9 @@
     }
 
 </style></head>
-<body>
-    <!-- Loading Screen -->
-    <div class="loading" id="loading" style="opacity: 0; display: none;">
-        <div class="loading-spinner"></div>
-    </div>
 
-    <!-- Animated Background -->
-    <div class="bg-animation"></div>
 
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <a href="#" class="logo">Midnight Bun 3D Printer Studio</a>
-            <ul class="nav-links">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#how-it-works" class="">Printer Cam (K2 Plus)</a></li>
-                <li><a href="#gcode-preview">Gcode Print Preview (K2 Plus)</a></li>
-                <li><a href="#team" class="">Meet The Team</a></li>
 
-                <li><a href="#cta" class="discord-link" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord server">Join the Build Process</a>
-                <!-- <li><a href="file:///C:/Users/Brandon/Desktop/Bosch%20Pack%20Tracker%20Map%20V2/index.html" class="discord-link" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord server">Open Map</a></li> -->
-                <li><a href="" class="support-link" target="_blank" rel="noopener noreferrer" aria-label="Support the server on Ko-fi">Donation (Optional)</a></li>
-            </ul>
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
-                <div class="hamburger-icon">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
-                </div>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close mobile menu">
-            <i class="fas fa-times" aria-hidden="true"></i>
-        </button>
-        <a href="#home" class="active">Home</a>
-        <a href="#how-it-works">Printer Cam (K2 Plus)</a>
-        <a href="#gcode-preview">Gcode Print Preview (K2 Plus)</a>
-        <a href="#cta-title">Join the Build Process</a>
-        <a href="#team">Meet The Team</a>
-        
-        <a href="" class="support-link" target="_blank" rel="noopener noreferrer" aria-label="Support the server on Ko-fi">Donation (Optional)</a>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero2" id="home" role="banner">
-        <div class="hero2-slider">
-            <div class="hero2-slide active"></div>
-            <div class="hero2-slide"></div>
-            <div class="hero2-slide"></div>
-            <div class="hero2-slide active"></div>
-        </div>
-        <div class="floating-elements">
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-            <div class="floating-element"></div>
-        </div>
-        <div class="hero2-content">
-
-            <h1 class="hero2-title">
-                <span class="typing-text" data-text="Midnight Bun 3D Printer Studio"> </span>
-            </h1>
-            <div class="hero2-subtitles">🧑‍💻 | Fan Made Studio Projects</div>
-            <div class="hero2-subtitles">🍪 | STUDIO STATUS ✅ - BETA TESTING </div>
-            <h2 class="hero2-subtitles">Current Focus | Building the Team</h2>
-            <h2 class="hero2-subtitles">Current Projects | 3D Printer Site</h2>
-                <!-- SECRET PROJECT -->
-                <div class="feature-card zoom-in visible">
-                    <div class="feature-card__content">
-
-                        <div class="feature-card__left">
-                            <div class="feature-icon">
-                                <img src="assets/img/BunDevProjects logo with cute rabbit.png" alt="Work in Progress">
-                            </div>
-                        </div>
-
-                        <div class="feature-card__right">
-                            <h3 class="feature-title"><span style="color:#921cf3">Creality K2 Plus Cam</span></h3>
-
-                            <p class="feature-description">
-                                <span style="font-size:18px;color:#ffffff">Live Printer Cam for the Creality K2 Plus<br>
-                                Watch the printer in real-time!<br><br>
-                                <strong><span style="font-size:22px;color:#ff3636">Note:</span></strong> This is a live feed and may experience delays...</span>
-                            </p>
-
-                            <a href="#how-it-works"
-                            class="btn btn-dark cta-btn-primary"
-                            target="_blank">
-
-                                <i class="fas fa-flask"></i>
-                                <span>(Click) to Watch Live Feed</span>
-                                <div class="btn-shine"></div>
-                            </a>
-                            <p class="feature-description">
-                                <strong><span style="font-size:22px;color:#53ff5b">Site Updates:</span></strong><span style="font-size:18px;color:#ffffff"> Adding More Features over Time.<br><span style="font-size:20px;color:#f8a830">Work in Progress:</span><br>Gcode Preview Cam</span>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="how-it-works how-it-works--wide" id="how-it-works"></section>
     <div style="
     background:#11111100;
     padding:20px;
@@ -396,11 +269,11 @@
             </div>
         </div>
     </section>
--->
+
 
     
 
-    <!-- CONTRIBUTORS -->
+
     <div class="feature-card feature-card--required zoom-in visible">
         <div class="feature-card__content">
 
@@ -440,7 +313,7 @@
 </section>
     
 </div>
-    <!-- Team Section -->
+
     <section class="team" id="team">
         <div class="team-container">
             <div class="section-title flip-in visible">
@@ -461,8 +334,7 @@
                     </div>
                     <h3 class="team-name">BunnyOreo</h3>
                     <p class="team-role">Co-Owner / Server Admin</p>
-                </div>
-<!--    
+                </div>   
                 <div class="team-card scale-up visible">
                     <div class="team-image">
                         <img src="assets/img/yukon.webp" alt="Chemical OverDose">
@@ -491,11 +363,11 @@
                     <h3 class="team-name">UglyFiveTwo</h3>
                     <p class="team-role">Server Admin</p>
                 </div>
--->            </div>
+           </div>
         </div>
     </section>
     
-    <!-- CTA Section -->
+
     <section class="cta" id="cta">
         <div class="cta-particles">
             <div class="particle"></div>
@@ -537,7 +409,6 @@
             </div>
         </div>
         
-        <!-- Footer text overlaid on bottom of CTA -->
         <div class="cta-footer">
             <div class="cta-footer-inner">
                 <p>© The Isle OCR Trackers - All rights reserved</p>
@@ -553,13 +424,12 @@
 
 
 
-    <!-- Scroll to Top Button -->
+
     <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
         <i class="fas fa-chevron-up" aria-hidden="true"></i>
     </button>
 
-    <!-- Terms of Service Modal -->
-    <!-- Gallery Modal -->
+
     <div class="gallery-modal" id="galleryModal">
         <div class="gallery-modal-content">
             <button class="gallery-modal-close" id="galleryModalClose" aria-label="Close image viewer">×</button>
@@ -572,12 +442,8 @@
             <img id="galleryModalImage" src="" alt="">
         </div>
     </div>
+    -->
 
-
-    <!-- Custom JavaScript -->
-    <script src="assets/js/bosch-island.js" defer=""></script>
-    
-    <!-- Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
@@ -593,7 +459,6 @@
     </script>
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;480c3a4197e547738d78871ccf9b009f&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous" style="display: none !important;"></script>
 
-    <!-- Custom JavaScript -->
-    <script src="assets/js/Bun-Studios.js" defer=""></script>
+
 </body>
 </html>
